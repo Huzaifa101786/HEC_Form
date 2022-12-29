@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <img src="">
-    <a class="navbar-brand" href="#"><b>Higher Education Commission, Pakistan</b></a>
+    <img src="logo.png">
+    <a style="color:rgb(14, 14, 126) !important "  class="navbar-brand" href="#"><b>Higher Education Commission, Pakistan</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -308,6 +308,27 @@
       </div>
         <input type="submit" onclick="username()">
       </div>
+
+      <div class="container" id="data_show">
+      <div  class="row">
+        <div class="col-2">
+          <label><b>Full Name: </b></label>
+        </div>
+        <div class="col-3">
+          <p id="full_name"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label><b>Your Age is: </b></label>
+        </div>
+        <div class="col-3">
+          <p id="cal_age"></p>
+        </div>  
+      </div>
+    </div>
+
+    </div>
     </div>
   </form>
 
@@ -653,24 +674,29 @@
     $('#container2').hide();
     $('#container3').hide();
     $('#container4').hide();
+    $('#data_show').hide();
 
     $('#option1').click(function () {
       $('#container1').show();
+      //$('#data_show').show();
       $('#container2').hide();
       $('#container3').hide();
       $('#container4').hide();
+      
     })
     $('#option2').click(function () {
       $('#container2').show();
       $('#container1').hide();
       $('#container3').hide();
       $('#container4').hide();
+      $('#data_show').hide();
     })
     $('#option3').click(function () {
       $('#container3').show();
       $('#container1').hide();
       $('#container2').hide();
       $('#container4').hide();
+      $('#data_show').hide();
 
     })
     $('#option4').click(function () {
@@ -678,6 +704,7 @@
       $('#container1').hide();
       $('#container2').hide();
       $('#container3').hide();
+      $('#data_show').hide();
 
     })
 
@@ -704,7 +731,11 @@
   var c_year = date.getFullYear();
   
   var age_year = eval(c_year - year);
-  alert(age_year);
+  var age_month = eval()  ;
+  $('#data_show').show();
+  $('#full_name').append(fir+ " " +las);
+  $('#cal_age').append(age_year);
+
   
   
   }

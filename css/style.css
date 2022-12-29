@@ -5,7 +5,7 @@
     color:darkgreen;
    }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light{
-  background-color:  rgb(202, 221, 231) !important;
+  background-color:  rgb(228, 233, 236) !important;
 }
   hr{
     border: 1px solid rgb(195, 195, 197);
@@ -136,8 +136,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     border-width: 2px !important;
     background-color: rgb(202, 221, 231);
     text-align: center;
-    color: rgb(23, 23, 24);
+    color: rgb(3, 3, 97);
     cursor: pointer;
+    
+  }
+  th:hover{
+    color:rgba(34, 59, 97, 0.87) !important;
   }
 
   #btn{
