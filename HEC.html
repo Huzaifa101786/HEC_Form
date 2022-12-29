@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hec</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="">
+    <a class="navbar-brand" href="#"><b>Higher Education Commission, Pakistan</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" id="option1">Personal Details</th>
+        <th id="option2" scope="col">Contact Details</th>
+        <th id="option4" scope="col">Education Details</th>
+        <th id="option3" scope="col">Employment Details</th>
+
+      </tr>
+    </thead>
+  </table>
+</div>
+<div class="container" id="container1">
+  <h2 style="text-align: center;">Personal Details</h2>
+
+  <hr>
+  <form>
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">Title</label>
+      </div>
+      <div class="col-3">
+        <select class="form-select inputwidth" required>
+          <option></option>
+          <option>Student</option>
+          <option>Govt Servant</option>
+          <option>Private Servant</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2" style="width: 15%  !important;">
+        <label class="col-form-label">First Name</label>
+      </div>
+      <div class="col-3">
+        <input  id="first"  class="inputwidth" type="text" required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2" style="width: 15%  !important;">
+        <label class="col-form-label">Middle Name</label>
+      </div>
+      <div class="col-3">
+        <input class="inputwidth" type="text" />
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">Last Name</label>
+      </div>
+      <div class="col-3">
+        <input id="last" class="inputwidth" type="text" required />
+      </div>
+      <div class="col-2">
+        <input style="padding-left: 100%; " type="file" name="myfile">
+        <!--
+        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                <p><img id="output" width="200" /></p>
+                <p><button><label for="file" style="cursor: pointer;">Upload Image</label></button></p>
+        -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <p>Martial Status</p>
+      </div>
+      <div class="col-3">
+        <label class="con">Married
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="con">Seperated/Divorce
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="con">Single
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <p>Gender</p>
+      </div>
+      <div id="gender" class="col-75">
+        <label class="con">Male
+          <input type="radio" checked="checked" name="radio1">
+          <span class="checkmark"></span>
+        </label>
+        <label class="con">Female
+          <input type="radio" name="radio1">
+          <span class="checkmark"></span>
+        </label>
+        <label class="con">Others
+          <input type="radio" name="radio1">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+
+
+
+    <h5>Biological Information</h5>
+    <hr>
+
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">Date of Birth</label>
+      </div>
+      <div class="col-3">
+        <input class="inputwidth" type="date" id="date" />
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <label class="col-form-label">Domicile District</label>
+      </div>
+      <div class="col-3">
+        <input class="inputwidth" type="text" r/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">Country of Birth</label>
+      </div>
+      <div class="col-3">
+        <select class="form-select inputwidth">
+          <option></option>
+          <option value="AF">Afghanistan</option>
+          <option value="AX">Aland Islands</option>
+          <option value="AL">Albania</option>
+          <option value="DZ">Algeria</option>
+          <option value="AS">American Samoa</option>
+          <option value="AD">Andorra</option>
+          <option value="AO">Angola</option>
+          <option value="PK">Pakistan</option>
+        </select>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <label class="col-form-label">Religion</label>
+      </div>
+      <div class="col-3">
+        <select class="form-select inputwidth" >
+          <option></option>
+          <option>Muslim</option>
+          <option>Non-Muslim</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">Domicile City</label>
+      </div>
+      <div class="col-3">
+        <select class="form-select inputwidth" required>
+          <option></option>
+          <option value="Islamabad">Islamabad</option>
+          <option value="Ahmed Nager Chatha">Ahmed Nager Chatha</option>
+          <option value="Ahmadpur East">Ahmadpur East</option>
+          <option value="Ali Khan Abad">Ali Khan Abad</option>
+          <option value="Alipur">Alipur</option>
+          <option value="Arifwala">Arifwala</option>
+          <option value="Attock">Attock</option>
+          <option value="Bhera">Bhera</option>
+          <option value="Bhalwal">Bhalwal</option>
+          <option value="Bahawalnagar">Bahawalnagar</option>
+        </select>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <label>Domicile Province</label>
+      </div>
+      <div class="col-3">
+        <select class="form-select inputwidth">
+          <option></option>
+          <option>Punjab</option>
+          <option>KPK</option>
+          <option>Sindh</option>
+          <option>Balochistan</option>
+        </select>
+      </div>
+    </div>
+
+
+    <h5> National ID</h5>
+    <hr>
+    <div class="row"
+      style="background-color:rgb(171, 189, 223) ; color: rgb(24, 3, 83); padding: 0px 15px; text-align: center;border-width: 1px;border-color: blue; margin-bottom: 13px;">
+      <p>Enter your identity information</p>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">Country</label>
+      </div>
+      <div class="col-3">
+        <input class="inputwidth" type="text" />
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <label class="col-form-label">Type</label>
+      </div>
+      <div class="col-3">
+        <select class="form-select inputwidth" >
+          <option></option>
+          <option>B-Form</option>
+          <option>CNIC</option>
+          <option>NTN</option>
+          <option>Passport/Travel Document</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">Identification No.</label>
+      </div>
+
+      <div class="col-3">
+        <input class="inputwidth" type="text" />
+      </div>
+
+      <div class="col-2"></div>
+      <div class="col-2">
+        <label class="col-form-label">Identification No.</label>
+      </div>
+      <div class="col-3">
+        <input class="inputwidth" type="text" />
+      </div>
+    </div>
+
+    <h5> Father's Information</h5>
+    <hr>
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">Father's Name</label>
+      </div>
+      <div class="col-3">
+        <input class="inputwidth" type="text" required />
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <label class="col-form-label">Occupation</label>
+      </div>
+      <div class="col-3">
+        <input class="inputwidth" type="text" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <label class="col-form-label">CNIC</label>
+      </div>
+      <div class="col-3">
+        <input class="inputwidth" type="text" />
+        <p style="font-size: xx-small;">380309124542</p>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="ms1">
+          <label class="form-check-label" for="ms1">Currently Employed</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label class="col-form-label">Status</label>
+      </div>
+      <div id="gender" class="col-5">
+        <label class="con">Alive
+          <input type="radio" checked="checked" name="radio2">
+          <span class="checkmark"></span>
+        </label>
+        <label class="con">Deceased
+          <input type="radio" name="radio2">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="col"></div>
+      <div class="col"></div>
+
+      </div>
+        <input type="submit" onclick="username()">
+      </div>
+    </div>
+  </form>
+
+
+
+
+
+
+
+
+
+  <div class="container" id="container2">
+
+    <h2 style="text-align: center;">Contact Details</h2>
+    <h5>Permanent Address Details</h5>
+    <hr>
+    <form>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Type</label>
+        </div>
+        <div class="col-3">
+          <p style="font-size: small; margin-top: 10px;">Permanent</p>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Address</label>
+        </div>
+        <div class="col">
+          <input class="inputwidth" type="text" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Country</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" required />
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Postal Code</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">City</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" required />
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">District</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" required />
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+      </div>
+      <h5>Mailing Address Details</h5>
+      <hr>
+      <div class="row">
+        <div class="col-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ma1">
+            <label class="form-check-label" for="ma1">Same as Permanent Address</label>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Address</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Type</label>
+        </div>
+        <div class="col-3">
+          <p style="font-size: small; margin-top: 10px;">Mailing</p>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Postal Code</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Country</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">City</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" required />
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">District</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" required />
+        </div>
+
+      </div>
+      <h5>Current Address Details</h5>
+      <hr>
+      <div class="row">
+        <div class="col-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ma1">
+            <label class="form-check-label" for="ma1">Same as Permanent Address</label>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Address</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Type</label>
+        </div>
+        <div class="col-3">
+          <p style="font-size: small; margin-top: 10px;">Current</p>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Country</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">City</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text">
+        </div>
+
+      </div>
+      <h5>Contact</h6>
+        <hr>
+        <div style="color: rgb(3, 2, 61); background-color: rgb(152, 174, 216); text-align:center;">
+          <h6> Update your contact information</h6>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <label class="col-form-label">Contact Type</label>
+          </div>
+          <div class="col-3">
+            <select class="form-select inputwidth" required />
+            <option></option>
+            <option>Fax</option>
+            <option>Home Phone</option>
+            <option>Office Phone</option>
+            <option>Cell Phone</option>
+            <option>Email</option>
+
+            </select>
+
+          </div>
+
+          <div class="col-2"></div>
+          <div class="col-2">
+            <label class="col-form-label">Contact Description</label>
+          </div>
+          <div class="col-3">
+            <input class="inputwidth" type="text" required />
+          </div>
+
+        </div>
+        <h5>Social Contact</h5>
+        <hr>
+
+
+        <div class="row">
+
+          <div class="col-2" id="idcolorfirst">
+            <label class="col-form-label">Contact Type</label>
+          </div>
+          <div class="col-3">
+            <select class="form-select inputwidth">
+              <option></option>
+              <option>Facebook</option>
+              <option>Google+</option>
+              <option>Linkedin</option>
+              <option>Twitter</option>
+            </select>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-2">
+            <div class="col-2" id="idcolormid">
+              <label class="col-form-label">Contact Description</label>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <input class="inputwidth" type="text" />
+          </div>
+        </div>
+
+
+        <br>
+        <input type="submit">
+        <br><br>
+        <div>
+
+    </form>
+
+  </div>
+  </div>
+
+  <div class="container" id="container4">
+    <h2 style="text-align: center;">Education Details</h2>
+    <hr>
+    <div class="row"
+      style="background-color:rgb(171, 189, 223) ; color: rgb(24, 3, 83); padding: 0px 15px; text-align: center;border-width: 1px;border-color: blue; margin-bottom: 13px;">
+      <p>Enter your Education information</p>
+    </div>
+  </div>
+
+
+  <div class="container" id="container3">
+    <h2 style="text-align: center;">Employment Details</h2>
+    <div class="row">
+      <div class="col-3">
+        <h6>
+          Employer Details
+        </h6>
+      </div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <h6>
+        Job Details
+      </h6>
+    </div>
+    <hr>
+    <form>
+
+
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Organization Type</label>
+        </div>
+        <div class="col form-check">
+          <div class="form-check-inline mt-2">
+            <input class="form-check-input" type="radio" name="organizationType" id="ot1" required />
+            <label class="form-check-label" for="ot1">Academic</label>
+          </div>
+          <div class="form-check-inline mt-2">
+            <input class="form-check-input" type="radio" name="organizationType" id="ot2" required />
+            <label class="form-check-label" for="ot2">Professional</label>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"><label class="col-form-label">Job Type</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+      </div>
+      <div class="row">
+        <div class="col-2"><label class="col-form-label">Country</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+        <div class="col-2"></div>
+        <div class="col-2"><label class="col-form-label">Job Title</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+      </div>
+      <div class="row">
+        <div class="col-2"><label class="col-form-label">Sector</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+        <div class="col-2"></div>
+        <div class="col-2"><label class="col-form-label">Field of Work</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+      </div>
+      <div class="row">
+        <div class="col-2"><label class="col-form-label">Catogary</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+        <div class="col-2"></div>
+        <div class="col-2"><label class="col-form-label">Career Level</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+      </div>
+      <div class="row">
+        <div class="col-2"><label class="col-form-label">Employer Name</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+        <div class="col-2"></div>
+        <div class="col-2"><label class="col-form-label">Start Date</label></div>
+        <div class="col-3"><input class="inputwidth" type="text" required /></div>
+      </div>
+      <div class="row">
+        <input type="submit">
+        <div>
+          <hr>
+    </form>
+
+  </div>
+  </div>
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>
+
+<script>
+
+
+  $('document').ready(function () {
+    $('#container1').show();
+    $('#container2').hide();
+    $('#container3').hide();
+    $('#container4').hide();
+
+    $('#option1').click(function () {
+      $('#container1').show();
+      $('#container2').hide();
+      $('#container3').hide();
+      $('#container4').hide();
+    })
+    $('#option2').click(function () {
+      $('#container2').show();
+      $('#container1').hide();
+      $('#container3').hide();
+      $('#container4').hide();
+    })
+    $('#option3').click(function () {
+      $('#container3').show();
+      $('#container1').hide();
+      $('#container2').hide();
+      $('#container4').hide();
+
+    })
+    $('#option4').click(function () {
+      $('#container4').show();
+      $('#container1').hide();
+      $('#container2').hide();
+      $('#container3').hide();
+
+    })
+
+
+    $('first').val();
+  }); 
+
+  var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+  };
+
+  function username() {
+  var fir = document.getElementById("first").value;
+  var las= document.getElementById("last").value;
+
+  
+  var dt =  new Date($("#date").val());
+  var year = dt.getFullYear();
+  var month = dt.getMonth()+1;
+  var day = dt.getDate();
+  const date = new Date();
+  var c_month = date.getMonth() + 1;
+  var c_year = date.getFullYear();
+  
+  var age_year = eval(c_year - year);
+  alert(age_year);
+  
+  
+  }
+
+</script>
