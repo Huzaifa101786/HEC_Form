@@ -5,9 +5,11 @@
   <title>Hec</title>
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img src="logo.png">
-    <a style="color:rgb(14, 14, 126) !important "  class="navbar-brand" href="#"><b>Higher Education Commission, Pakistan</b></a>
+    <a style="color:rgb(14, 14, 126) !important " class="navbar-brand" href="#"><b>Higher Education Commission,
+        Pakistan</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,322 +17,367 @@
   </nav>
   </style>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
-<div class="container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col" id="option1">Personal Details</th>
-        <th id="option2" scope="col">Contact Details</th>
-        <th id="option4" scope="col">Education Details</th>
-        <th id="option3" scope="col">Employment Details</th>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" id="option1">Personal Details</th>
+          <th id="option2" scope="col">Contact Details</th>
+          <th id="option4" scope="col">Education Details</th>
+          <th id="option3" scope="col">Employment Details</th>
 
-      </tr>
-    </thead>
-  </table>
-</div>
-<div class="container" id="container1">
-  <h2 style="text-align: center;">Personal Details</h2>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="container" id="container1">
+    <h2 style="text-align: center;">Personal Details</h2>
 
-  <hr>
-  <form>
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">Title</label>
-      </div>
-      <div class="col-3">
-        <select class="form-select inputwidth" required>
-          <option></option>
-          <option>Student</option>
-          <option>Govt Servant</option>
-          <option>Private Servant</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-2" style="width: 15%  !important;">
-        <label class="col-form-label">First Name</label>
-      </div>
-      <div class="col-3">
-        <input  id="first"  class="inputwidth" type="text" required />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2" style="width: 15%  !important;">
-        <label class="col-form-label">Middle Name</label>
-      </div>
-      <div class="col-3">
-        <input class="inputwidth" type="text" />
-      </div>
-
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">Last Name</label>
-      </div>
-      <div class="col-3">
-        <input id="last" class="inputwidth" type="text" required />
-      </div>
-      <div class="col-2">
-        <input style="padding-left: 100%; " type="file" name="myfile">
-        <!--
-        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-                <p><img id="output" width="200" /></p>
-                <p><button><label for="file" style="cursor: pointer;">Upload Image</label></button></p>
-        -->
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <p>Martial Status</p>
-      </div>
-      <div class="col-3">
-        <label class="con">Married
-          <input type="radio" checked="checked" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="con">Seperated/Divorce
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="con">Single
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <p>Gender</p>
-      </div>
-      <div id="gender" class="col-75">
-        <label class="con">Male
-          <input type="radio" checked="checked" name="radio1">
-          <span class="checkmark"></span>
-        </label>
-        <label class="con">Female
-          <input type="radio" name="radio1">
-          <span class="checkmark"></span>
-        </label>
-        <label class="con">Others
-          <input type="radio" name="radio1">
-          <span class="checkmark"></span>
-        </label>
-      </div>
-    </div>
-
-
-
-    <h5>Biological Information</h5>
     <hr>
-
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">Date of Birth</label>
-      </div>
-      <div class="col-3">
-        <input class="inputwidth" type="date" id="date" />
-      </div>
-      <div class="col-2"></div>
-      <div class="col-2">
-        <label class="col-form-label">Domicile District</label>
-      </div>
-      <div class="col-3">
-        <input class="inputwidth" type="text" r/>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">Country of Birth</label>
-      </div>
-      <div class="col-3">
-        <select class="form-select inputwidth">
-          <option></option>
-          <option value="AF">Afghanistan</option>
-          <option value="AX">Aland Islands</option>
-          <option value="AL">Albania</option>
-          <option value="DZ">Algeria</option>
-          <option value="AS">American Samoa</option>
-          <option value="AD">Andorra</option>
-          <option value="AO">Angola</option>
-          <option value="PK">Pakistan</option>
-        </select>
-      </div>
-      <div class="col-2"></div>
-      <div class="col-2">
-        <label class="col-form-label">Religion</label>
-      </div>
-      <div class="col-3">
-        <select class="form-select inputwidth" >
-          <option></option>
-          <option>Muslim</option>
-          <option>Non-Muslim</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">Domicile City</label>
-      </div>
-      <div class="col-3">
-        <select class="form-select inputwidth" required>
-          <option></option>
-          <option value="Islamabad">Islamabad</option>
-          <option value="Ahmed Nager Chatha">Ahmed Nager Chatha</option>
-          <option value="Ahmadpur East">Ahmadpur East</option>
-          <option value="Ali Khan Abad">Ali Khan Abad</option>
-          <option value="Alipur">Alipur</option>
-          <option value="Arifwala">Arifwala</option>
-          <option value="Attock">Attock</option>
-          <option value="Bhera">Bhera</option>
-          <option value="Bhalwal">Bhalwal</option>
-          <option value="Bahawalnagar">Bahawalnagar</option>
-        </select>
-      </div>
-      <div class="col-2"></div>
-      <div class="col-2">
-        <label>Domicile Province</label>
-      </div>
-      <div class="col-3">
-        <select class="form-select inputwidth">
-          <option></option>
-          <option>Punjab</option>
-          <option>KPK</option>
-          <option>Sindh</option>
-          <option>Balochistan</option>
-        </select>
-      </div>
-    </div>
-
-
-    <h5> National ID</h5>
-    <hr>
-    <div class="row"
-      style="background-color:rgb(171, 189, 223) ; color: rgb(24, 3, 83); padding: 0px 15px; text-align: center;border-width: 1px;border-color: blue; margin-bottom: 13px;">
-      <p>Enter your identity information</p>
-    </div>
-
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">Country</label>
-      </div>
-      <div class="col-3">
-        <input class="inputwidth" type="text" />
-      </div>
-      <div class="col-2"></div>
-      <div class="col-2">
-        <label class="col-form-label">Type</label>
-      </div>
-      <div class="col-3">
-        <select class="form-select inputwidth" >
-          <option></option>
-          <option>B-Form</option>
-          <option>CNIC</option>
-          <option>NTN</option>
-          <option>Passport/Travel Document</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">Identification No.</label>
-      </div>
-
-      <div class="col-3">
-        <input class="inputwidth" type="text" />
-      </div>
-
-      <div class="col-2"></div>
-      <div class="col-2">
-        <label class="col-form-label">Identification No.</label>
-      </div>
-      <div class="col-3">
-        <input class="inputwidth" type="text" />
-      </div>
-    </div>
-
-    <h5> Father's Information</h5>
-    <hr>
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">Father's Name</label>
-      </div>
-      <div class="col-3">
-        <input class="inputwidth" type="text" required />
-      </div>
-      <div class="col-2"></div>
-      <div class="col-2">
-        <label class="col-form-label">Occupation</label>
-      </div>
-      <div class="col-3">
-        <input class="inputwidth" type="text" />
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-2">
-        <label class="col-form-label">CNIC</label>
-      </div>
-      <div class="col-3">
-        <input class="inputwidth" type="text" />
-        <p style="font-size: xx-small;">380309124542</p>
-      </div>
-      <div class="col-2"></div>
-      <div class="col-2">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="ms1">
-          <label class="form-check-label" for="ms1">Currently Employed</label>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <label class="col-form-label">Status</label>
-      </div>
-      <div id="gender" class="col-5">
-        <label class="con">Alive
-          <input type="radio" checked="checked" name="radio2">
-          <span class="checkmark"></span>
-        </label>
-        <label class="con">Deceased
-          <input type="radio" name="radio2">
-          <span class="checkmark"></span>
-        </label>
-      </div>
-
-      <div class="col"></div>
-      <div class="col"></div>
-
-      </div>
-        <input type="submit" onclick="username()">
-      </div>
-
-      <div class="container" id="data_show">
-      <div  class="row">
+    <form>
+      <div class="row">
         <div class="col-2">
-          <label><b>Full Name: </b></label>
+          <label class="col-form-label">Title</label>
         </div>
         <div class="col-3">
-          <p id="full_name"></p>
+          <select class="form-select inputwidth" required>
+            <option></option>
+            <option>Mr.</option>
+            <option>Mrs.</option>
+            <option>Dr.</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2" style="width: 15%  !important;">
+          <label class="col-form-label">First Name</label>
+        </div>
+        <div class="col-3">
+          <input id="first" class="inputwidth" type="text" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2" style="width: 15%  !important;">
+          <label class="col-form-label">Middle Name</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" />
         </div>
       </div>
       <div class="row">
         <div class="col-2">
-          <label><b>Your Age is: </b></label>
+          <label class="col-form-label">Last Name</label>
         </div>
         <div class="col-3">
-          <p id="cal_age"></p>
-        </div>  
+          <input id="last" class="inputwidth" type="text" required />
+        </div>
+        <div class="col-2">
+          <input style="padding-left: 100%; " type="file" name="myfile">
+          <!--
+        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                <p><img id="output" width="200" /></p>
+                <p><button><label for="file" style="cursor: pointer;">Upload Image</label></button></p>
+        -->
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-2">
+          <p>Martial Status</p>
+        </div>
+        <div class="col-3">
+          <label class="con">Married
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="con">Seperated/Divorce
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="con">Single
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <p>Gender</p>
+        </div>
+        <div id="gender" class="col-75">
+          <label class="con">Male
+            <input type="radio" checked="checked" name="radio1">
+            <span class="checkmark"></span>
+          </label>
+          <label class="con">Female
+            <input type="radio" name="radio1">
+            <span class="checkmark"></span>
+          </label>
+          <label class="con">Others
+            <input type="radio" name="radio1">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
 
-    </div>
-    </div>
-  </form>
+
+
+      <h5>Biological Information</h5>
+      <hr>
+
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Date of Birth</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="date" id="date" />
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Domicile District</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" r />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Country of Birth</label>
+        </div>
+        <div class="col-3">
+          <select id="countryIp" class="form-select inputwidth">
+            
+          </select>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Religion</label>
+        </div>
+        <div class="col-3">
+          <select class="form-select inputwidth">
+            <option></option>
+            <option>Muslim</option>
+            <option>Non-Muslim</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Domicile City</label>
+        </div>
+        <div class="col-3">
+          <select id="city_ip" class="form-select inputwidth" required>
+            <option></option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Ahmed Nager Chatha">Ahmed Nager Chatha</option>
+            <option value="Ahmadpur East">Ahmadpur East</option>
+            <option value="Ali Khan Abad">Ali Khan Abad</option>
+            <option value="Alipur">Alipur</option>
+            <option value="Arifwala">Arifwala</option>
+            <option value="Attock">Attock</option>
+            <option value="Bhera">Bhera</option>
+            <option value="Bhalwal">Bhalwal</option>
+            <option value="Bahawalnagar">Bahawalnagar</option>
+          </select>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label>Domicile Province</label>
+        </div>
+        <div class="col-3">
+          <select class="form-select inputwidth">
+            <option></option>
+            <option>Punjab</option>
+            <option>KPK</option>
+            <option>Sindh</option>
+            <option>Balochistan</option>
+          </select>
+        </div>
+      </div>
+
+
+      <h5> National ID</h5>
+      <hr>
+      <div class="row"
+        style="background-color:rgb(171, 189, 223) ; color: rgb(24, 3, 83); padding: 0px 15px; text-align: center;border-width: 1px;border-color: blue; margin-bottom: 13px;">
+        <p>Enter your identity information</p>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Country</label>
+        </div>
+        <div class="col-3">
+          <input id="country" class="inputwidth" type="text" />
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Type</label>
+        </div>
+        <div class="col-3">
+          <select class="form-select inputwidth">
+            <option></option>
+            <option>B-Form</option>
+            <option>CNIC</option>
+            <option>NTN</option>
+            <option>Passport/Travel Document</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Identification No.</label>
+        </div>
+
+        <div class="col-3">
+          <input id="cnic" class="inputwidth" type="text" />
+        </div>
+
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Identification No.</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" />
+        </div>
+      </div>
+
+      <h5> Father's Information</h5>
+      <hr>
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">Father's Name</label>
+        </div>
+        <div class="col-3">
+          <input id="f_name" class="inputwidth" type="text" required />
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <label class="col-form-label">Occupation</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <label class="col-form-label">CNIC</label>
+        </div>
+        <div class="col-3">
+          <input class="inputwidth" type="text" />
+          <p style="font-size: xx-small;">380309124542</p>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ms1">
+            <label class="form-check-label" for="ms1">Currently Employed</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label class="col-form-label">Status</label>
+        </div>
+        <div id="gender" class="col-5">
+          <label class="con">Alive
+            <input type="radio" checked="checked" name="radio2">
+            <span class="checkmark"></span>
+          </label>
+          <label class="con">Deceased
+            <input type="radio" name="radio2">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <div class="col"></div>
+        <div class="col"></div>
+
+      </div>
+      <input type="submit" onclick="username()">
+  </div>
+</form>
+  <div class="container" id="data_show">
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Field</th>
+          <th scope="col">Data</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Full Name</td>
+          <td>
+            <p id="full_name"></p>
+          </td>
+
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Date of Birth</td>
+          <td>
+            <p id="DOB"></p>
+          </td>
+
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Calculated Age </td>
+          <td>
+            <p id="cal_age"></p>
+          </td>
+
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Country</td>
+          <td>
+            <p id="country"></p>
+          </td>
+
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>City</td>
+          <td>
+            <p id="city"></p>
+          </td>
+
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Identification No.</td>
+          <td>
+            <p id="cnic"></p>
+          </td>
+
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Father's Name</td>
+          <td>
+            <p id="f_name"></p>
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+  </div>
+ 
 
 
 
@@ -580,7 +627,78 @@
       style="background-color:rgb(171, 189, 223) ; color: rgb(24, 3, 83); padding: 0px 15px; text-align: center;border-width: 1px;border-color: blue; margin-bottom: 13px;">
       <p>Enter your Education information</p>
     </div>
+    <div class="row" style="align-items: center;">
+      <button id="check_record">Check Records</button>
+      <button id="add_record">Add new Record</button>
+    </div>
+  <div class="container" id="education_record">
+  <table class="table table-striped" style="margin-top: 30px;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Grade</th>
+        <th scope="col">Passing Year</th>
+        <th scope="col">Grade Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Matric</td>
+        <td>2016</td>
+        <td>91%</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Fsc</td>
+        <td>2018</td>
+        <td>85%</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>BSCS</td>
+        <td>2022</td>
+        <td>3.2 CGPA</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
   </div>
+
+
+
+
+
+<div class="container" id="add_edu_record" >
+  <form>
+   <div class="row">
+  
+    <div class="col-2"></div>
+    <div class="col-3"><label>Add Qualification Grade</label></div>
+    <div id="q_grade" class="col-5"><input class="inputwidth" type="text" /></div>
+    <div class="col-2"></div>
+  
+    <div class="col-2"></div>
+    <div class="col-3"><label>Add Passing Year</label></div>
+    <div id="p_year" class="col-5"><input class="inputwidth" type="text" /></div>
+    <div class="col-2"></div>
+  
+    <div class="col-2"></div>
+    <div class="col-3"><label>Add Grade Percentage</label></div>
+    <div id="g_percentage" class="col-5"><input class="inputwidth" type="text" /></div>
+    <div class="col-2"></div>
+   </div>
+
+   <button name="Submit" value="Submit" style="height: 30px; width: 70px;">Submit</button>
+  </form>
+  
+
+</div> 
+
+
+
+
+
 
 
   <div class="container" id="container3">
@@ -665,79 +783,3 @@
 </body>
 
 </html>
-
-<script>
-
-
-  $('document').ready(function () {
-    $('#container1').show();
-    $('#container2').hide();
-    $('#container3').hide();
-    $('#container4').hide();
-    $('#data_show').hide();
-
-    $('#option1').click(function () {
-      $('#container1').show();
-      //$('#data_show').show();
-      $('#container2').hide();
-      $('#container3').hide();
-      $('#container4').hide();
-      
-    })
-    $('#option2').click(function () {
-      $('#container2').show();
-      $('#container1').hide();
-      $('#container3').hide();
-      $('#container4').hide();
-      $('#data_show').hide();
-    })
-    $('#option3').click(function () {
-      $('#container3').show();
-      $('#container1').hide();
-      $('#container2').hide();
-      $('#container4').hide();
-      $('#data_show').hide();
-
-    })
-    $('#option4').click(function () {
-      $('#container4').show();
-      $('#container1').hide();
-      $('#container2').hide();
-      $('#container3').hide();
-      $('#data_show').hide();
-
-    })
-
-
-    $('first').val();
-  }); 
-
-  var loadFile = function(event) {
-	var image = document.getElementById('output');
-	image.src = URL.createObjectURL(event.target.files[0]);
-  };
-
-  function username() {
-  var fir = document.getElementById("first").value;
-  var las= document.getElementById("last").value;
-
-  
-  var dt =  new Date($("#date").val());
-  var year = dt.getFullYear();
-  var month = dt.getMonth()+1;
-  var day = dt.getDate();
-  const date = new Date();
-  var c_month = date.getMonth() + 1;
-  var c_year = date.getFullYear();
-  
-  var age_year = eval(c_year - year);
-  var age_month = eval()  ;
-  $('#data_show').show();
-  $('#full_name').append(fir+ " " +las);
-  $('#cal_age').append(age_year);
-
-  
-  
-  }
-
-</script>
